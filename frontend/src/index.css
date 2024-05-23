@@ -27,3 +27,6 @@ body::-webkit-scrollbar{
 
 }
 }
+.shadowbox {
+  box-shadow: 4px 4px 9px #ffffff12;
+}

@@ -20,7 +20,7 @@ function  MyOrder() {
     }) 
     return (
     <div className='min-h-screen pt-16 lg:px-14 ' >
-        <h1 className='text-[30px] font-bold'>My Order.</h1>
+        <h1 className='text-[30px] pl-4 font-bold'>My Order.</h1>
     <div className='pt-7 order-list '>
             {
                 data.map((order,index)=>{

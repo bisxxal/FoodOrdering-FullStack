@@ -11,7 +11,7 @@ function FoodItem({id ,description,price ,name,  image,}) {
     <motion.div animate={{opacity:1}} transition={{
         ease: "linear",
         duration: 1.5,
-        }} className='food-item mt-[30px] bg-red-30 shadow  shadow-[#ffffff74] overflow-hidden  w-full opacity-0 rounded-2xl '>
+        }} className='shadowbox food-item mt-[30px] bg-red-30 bg-zinc-80 overflow-hidden  w-full opacity-0 rounded-2xl '>
      
        <div className=' relative'>
             <img className='' src={url+'/images/'+image} alt="" />
@@ -34,7 +34,7 @@ function FoodItem({id ,description,price ,name,  image,}) {
         </div>
       <div> 
          <p className='text-[13px] mt-3 text-[#ffffff98]'>{description}</p>
-        <p className='text-[25px] mt-3 font-bold text-[tomato] '>${price}</p></div>
+        <p className='text-[25px] mt-3 font-bold text-[#FF1E1E] '>${price}</p></div>
        </div>
     </motion.div>
   )

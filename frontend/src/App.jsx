@@ -9,6 +9,7 @@ import Fotter from './components/Fotter/Fotter'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Verify from './pages/verify/Verify'
 import MyOrder from './pages/MyOrder/MyOrder'
+import Category from './components/Categorie/Category'
 function App() { 
 const [showlogin , setShowlogin] = useState(false)
   return (
@@ -21,6 +22,7 @@ const [showlogin , setShowlogin] = useState(false)
             <Route path='/order' element={<PlaceOrder/>}/>
             <Route path='/verify' element={<Verify />}/>
             <Route path='/myorders' element={<MyOrder />}/>
+            <Route path='/categorie' element={<Category />}/>
           </Routes>
         <Fotter/>
     </div>

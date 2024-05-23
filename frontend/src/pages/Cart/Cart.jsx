@@ -5,20 +5,7 @@ import {  useNavigate } from 'react-router-dom'
 function Cart() {
   const  {
     food_list,removeToCart,cartItems,gettotolCartItem,url ,dis , setDis,discount} = useContext(StoreContext)
-  const navigate = useNavigate()
-//   const [dis , setDis] = useState()
-  
-//   const discount = () => {
-//     let totalAmount = gettotolCartItem();
-//     if (dis === "NEW20") {
-//      Math.floor( totalAmount *= 0.8); // Apply 20% discount
-//     }
-//     return totalAmount.toFixed(2);
-// };
-
-// useEffect(()=>{
-//     console.log(discount());
-//   },[discount])
+  const navigate = useNavigate() 
   return (
     <div>
       <div className='pt-24 cart-item px-7 lg:px-14'>
@@ -61,7 +48,7 @@ function Cart() {
             <div className="totaldetails flex justify-between pr-5 font-bold mt-4"><p>Total</p> $ {discount()}</div>
             {/* <div className="totaldetails flex justify-between pr-5 font-bold mt-4"><p>Total</p> $ {gettotolCartItem() > 0 ? gettotolCartItem()+3 : '0'}</div> */}
           </div>
-          <button onClick={()=> navigate('/order')} className='px-5 py-3 mt-9 font-semibold text-[13px] bg-[tomato] rounded-full'>PROCEED TO  CHEAKOUT</button>
+          <button onClick={()=> navigate('/order')} className='px-5 py-3 mt-9 font-semibold text-[13px] bg-[#FF1E1E] rounded-full'>PROCEED TO  CHEAKOUT</button>
         </div>
 
         <div className="cart-promocode w-full lg:w-1/4 lg:mb-0 mb-7">
@@ -69,7 +56,7 @@ function Cart() {
             <p>If You have a promo code , Enter it here</p>
             <dir  className="border flex justify-between w-[90%] rounded-lg overflow-hidden mt-4 border-[#ffffff65]">
             <input onChange={(e)=>setDis(e.target.value)} className='px-2  rounded py-1 outline-none bg-transparent  ' type="text" placeholder='Enter Promocode'/>
-            <button onClick={()=>discount()} className='px-5 py-2  font-semibold text-[13px] bg-[tomato] '>Sumbit</button>
+            <button onClick={()=>discount()} className='px-5 py-2  font-semibold text-[13px] bg-[#FF1E1E] '>Sumbit</button>
        
             </dir>
 

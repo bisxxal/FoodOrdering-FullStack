@@ -20,14 +20,15 @@ function Navbar({setShowlogin}) {
     <div className="w-full text-white flex items-center justify-between h-[60px] px-4 lg:px-8 py-2 fixed backdrop-blur-[7px] z-[10] bg-[#0000004a]">
       
       <div className="logo ">
-    <Link to={'/'}> <img src={assets.logo} className="w-[100px] lg:w-[unset] object-cover" alt="" /> </Link>   
+    <Link to={'/'}>
+    <h1 className="text-[20px] lg:text-[40px] leading-none  font-extrabold text-[#ff1e1e]">DELICIOUS !!</h1>
+       </Link>   
       </div>
       <div className="lg:flex h-full items-center gap-7 hidden">
 
-      <Link to={'/'} onClick={()=>setMenu('home')} className={`${menu === 'home' ?" border-b border-white ": ""}`}  >home</Link>
-      <a onClick={()=>setMenu('menu')} className={`${menu === 'menu' ?" border-b border-white ": ""}`} href="#menu">menu</a>
-      <a onClick={()=>setMenu('mobile-app')} className={`${menu === 'mobile-app' ?" border-b border-white ": ""}`} href="#dowload">mobile-app</a>
-      <a onClick={()=>setMenu('contact-us')} className={`${menu === 'contact-us' ?" border-b border-white ": ""}`} href="#fotter">contact-us</a> 
+      <Link to={'/'} onClick={()=>setMenu('home')} className={`${menu === 'home' ?" border-b-[2px] border-[#ff1e1e] ": ""}`}  >Home</Link>
+      <Link to={'/categorie'} onClick={()=>setMenu('menu')} className={`${menu === 'menu' ?" border-b-[2px] border-[#ff1e1e] ": ""}`} href="#menu">Menu</Link> 
+      <a onClick={()=>setMenu('contact-us')} className={`${menu === 'contact-us' ?" border-b-[2px] border-[#ff1e1e] ": ""}`} href="#fotter">Contact-us</a> 
        
       </div>
 
@@ -37,7 +38,7 @@ function Navbar({setShowlogin}) {
             <FaCartShopping className="text-2xl z-[1]" />
             {
               gettotolCartItem() > 0 && (
-                <div className="absolute h-4 w-4 rounded-full bg-red-500 top-[-11px] right-[-11px] flex items-center justify-center">
+                <div className="absolute h-3 w-3 rounded-full bg-[#FF1E1E] top-[-8px] right-[-9px] flex items-center justify-center">
                  
                 </div>
               )

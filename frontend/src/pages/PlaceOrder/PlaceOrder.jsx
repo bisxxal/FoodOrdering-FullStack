@@ -85,7 +85,7 @@ useEffect(()=>{
  </div>
             <div className="totaldetails flex justify-between pr-5 font-bold mt-4"><p>Total</p> $ {discount()}</div>
           </div>
-          <button  type='sumbit' className='px-5 py-3 mt-9 font-semibold text-[13px] bg-[tomato] rounded-full'>PROCEED TO  PAYMENT</button>
+          <button  type='sumbit' className='px-5 py-3 mt-9 font-semibold text-[13px] bg-[#FF1E1E] rounded-full'>PROCEED TO  PAYMENT</button>
         </div>
        
       </div>

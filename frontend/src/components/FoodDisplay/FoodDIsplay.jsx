@@ -7,7 +7,7 @@ function FoodDIsplay( {categorie}) {
     
   return (
     <div className='food-display mt-10' id='display'>
-    <h1 className='text-[26px] font-semibold'>Top Dishes Near You</h1>
+    <h1 className='text-[26px] font-semibold'>Top Dishes For You</h1>
 
         <div className='food-display gap-[30px] row-gap-[50px] '  style={{ display:'grid', gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}>
             {food_list.map((item,index)=>{
