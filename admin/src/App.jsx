@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import MyOrder from "./pages/MyOrder/MyOrder";
 import Home from "./components/Home/Home";
 function App() {
-  const url = "http://localhost:4000";
+  const url = "https://foodorderi.onrender.com";
   return (
     <div className="bg-zinc-900 w-full pxx-16 min-h-screen text-white">
       <ToastContainer/>
