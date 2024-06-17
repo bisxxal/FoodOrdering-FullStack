@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios'
 import { StoreContext } from '../../context/StoreContext';
 function LoginPopup({setShowlogin}) {
-  const{url,token, setToken} = useContext(StoreContext)
+  const{url, setToken} = useContext(StoreContext)
   const [currState , setCurrState] =useState("Login")
   const [data  , setData] = useState({
     name:'',
