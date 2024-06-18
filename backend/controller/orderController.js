@@ -4,7 +4,7 @@ import userModel from '../models/userModel.js';
 const stripe  = new Stripe(process.env.STRIPE_SECRECT_KEY)
 
 export const placeOrder = async(req,res)=>{
-    const frontend_url = "http://localhost:5173"
+    const frontend_url = "https://deliciousses.netlify.app/"
     try {
         const { userId , items ,amount,address} = req.body;
         const newOrder = new orderModel({
